@@ -38,8 +38,18 @@ public class Main {
             month++;
             totalMoney = totalMoney + totalMoney / 100 * 7;
             totalMoney = totalMoney + money;
-            if (month % 6 == 0) {
-                System.out.println("Месяц " + month + ", сумма накоплений равна " + totalMoney + " рублей");
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + totalMoney + " рублей");
+        }
+
+        int amountMoney = 15000;
+        int amountMonth = 0;
+        int amountTotalMoney = 0;
+        while (amountTotalMoney <= 12000000) {
+            amountMonth++;
+            amountTotalMoney = amountTotalMoney + amountTotalMoney / 100 * 7;
+            amountTotalMoney = amountTotalMoney + amountMoney;
+            if (amountMonth % 6 == 0) {
+                System.out.println("Месяц " + amountMonth + ", сумма накоплений равна " + amountTotalMoney + " рублей");
             }
         }
 
